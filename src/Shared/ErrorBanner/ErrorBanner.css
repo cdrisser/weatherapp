@@ -1,0 +1,10 @@
+.error-banner{
+    position:absolute;
+    top:0;
+    right:0;
+    width: inherit;
+    padding:5px;
+    color:black;
+    background-color: red;
+    border-radius: 1rem 1rem 0 0;
+}
