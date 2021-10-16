@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import LayoverSearch from '../Shared/LayoverSearch/LayoverSearch';
 import '../WeatherDisplay/WeatherDisplay.css';
 
 const WeatherDisplay = ({name, coord:{lat,lon},main:{temp, feels_like},weather, setUserLocation})=>{
     const[displaySearch,setDisplaySearch]= useState(false);
     const imgsrc = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png`
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
 
     const openSearchModal = ()=>{
         setDisplaySearch((prev)=>!prev)

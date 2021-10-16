@@ -5,7 +5,7 @@ import WeatherDisplay from '../WeatherDisplay/WeatherDisplay';
 import ErrorBanner from '../Shared/ErrorBanner/ErrorBanner';
 
 import '../Geolocation/Geolocation.css'
-import WeatherLookup from '../WeatherLookup.js/WeatherLookup';
+import WeatherLookup from '../WeatherLookup/WeatherLookup';
 
 const Geolocation =  () => {
   const [userLocation, setUserLocation] = useState('');
@@ -61,7 +61,7 @@ const Geolocation =  () => {
       <div className = {`weather-container ${foundWeather?'background-image':''}`} style ={{"backgroundImage":!!foundWeather ?  `linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),url(
         https://weatherappreat.s3.us-west-2.amazonaws.com/weather-app-images/tinified/${typeOfImg}.jpg)`: 'none' }} >
         {error && <ErrorBanner>{error}</ErrorBanner>}
-        {(!userLocation || error) && <WeatherLookup setUserLocation={setUserLocation}/>}
+        {(!userLocation || error) && <WeatherLookup setUserLocation={setUserLocation} mainPage={true}/>}
         {!!foundWeather && <WeatherDisplay {...foundWeather} setUserLocation={setUserLocation} />}
       </div>
       ) 

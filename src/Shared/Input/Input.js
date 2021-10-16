@@ -26,8 +26,6 @@ const Input = ({setlookupParams})=>{
 
     return(
         <div>
-        <label htmlFor = "lookupParams">Please enter zip or city and state as shown</label>
-        <br></br>
         <input id="lookUpParams" type = 'text' onChange={verifyInput} placeholder="97015 or Clackamas, OR"></input>
         </div>
     )

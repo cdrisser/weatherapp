@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherLookup from '../../WeatherLookup.js/WeatherLookup';
+import WeatherLookup from '../../WeatherLookup/WeatherLookup';
 import '../LayoverSearch/LayoverSearch.css'
 
 const LayoverSearch = ({setUserLocation, close})=> {
