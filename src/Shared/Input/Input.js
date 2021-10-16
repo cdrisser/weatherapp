@@ -11,7 +11,7 @@ const Input = ({setlookupParams})=>{
                     ...prevState,
                     isvalid:true,
                     param:paramType,
-                    value:value.replace(/\s+/g,'')
+                    value:value.replace(/\s+/g,'%20')
                 }));
                 
             }
