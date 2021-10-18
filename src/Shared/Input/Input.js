@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import { inputValidator } from '../InputValidator/InputValidator';
 import ErrorBanner from '../ErrorBanner/ErrorBanner';
 
@@ -33,6 +33,10 @@ const Input = ({setlookupParams})=>{
             }
         },500)
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
     
 
     return(
