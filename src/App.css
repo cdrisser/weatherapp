@@ -3,7 +3,7 @@
   padding:0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: clamp(1.25rem,2vw,2rem);
+  font-size: clamp(1.25rem, 1.5vw, 1.25rem);
   color:white;
   font-weight: 600;
   
